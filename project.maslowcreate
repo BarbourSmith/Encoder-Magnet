@@ -8,6 +8,56 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.1061493411420205,
+            "y": 0.5134099616858238,
+            "uniqueID": 166294,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 6
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.28038067349926793,
+            "y": 0.5517241379310345,
+            "uniqueID": 282598,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 2.5
+                }
+            ]
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.38945827232796487,
+            "y": 0.5287356321839081,
+            "uniqueID": 533936,
+            "ioValues": [],
+            "selectedColorIndex": 0
+        },
+        {
+            "atomType": "Add BOM Tag",
+            "name": "Add BOM Tag",
+            "x": 0.5153733528550513,
+            "y": 0.5057471264367817,
+            "uniqueID": 662926,
+            "ioValues": [],
+            "BOMitem": {
+                "BOMitemName": "Encoder Magnet",
+                "numberNeeded": 1,
+                "costUSD": 0.19,
+                "source": "https://www.digikey.com/product-detail/en/radial-magnet-inc/9049/469-1075-ND/6030786",
+                "totalNeeded": 1
+            }
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -15,6 +65,36 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 166294,
+            "ap2ID": 282598
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 282598,
+            "ap2ID": 533936
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 533936,
+            "ap2ID": 662926
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 662926
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": 0.25
 }
