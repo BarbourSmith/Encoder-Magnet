@@ -28,6 +28,10 @@
             "uniqueID": 282598,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/956071/166294Circle"
+                },
+                {
                     "name": "height",
                     "ioValue": 2.5
                 }
@@ -39,30 +43,26 @@
             "x": 0.38945827232796487,
             "y": 0.5287356321839081,
             "uniqueID": 533936,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/956071/282598Extrude"
+                }
+            ],
             "selectedColorIndex": 0
-        },
-        {
-            "atomType": "Add BOM Tag",
-            "name": "Add BOM Tag",
-            "x": 0.5153733528550513,
-            "y": 0.5057471264367817,
-            "uniqueID": 662926,
-            "ioValues": [],
-            "BOMitem": {
-                "BOMitemName": "Encoder Magnet",
-                "numberNeeded": 1,
-                "costUSD": 0.19,
-                "source": "https://www.digikey.com/product-detail/en/radial-magnet-inc/9049/469-1075-ND/6030786",
-                "totalNeeded": 1
-            }
         },
         {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
             "y": 0.5,
-            "ioValues": []
+            "uniqueID": 208879,
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/956071/533936Color"
+                }
+            ]
         }
     ],
     "allConnectors": [
@@ -82,16 +82,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 533936,
-            "ap2ID": 662926
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": 662926
+            "ap1ID": 533936,
+            "ap2ID": 208879
         }
     ],
     "fileTypeVersion": 1,
